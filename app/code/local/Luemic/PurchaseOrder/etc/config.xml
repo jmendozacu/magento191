@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Luemic_PurchaseOrder>
+            <version>1.0.0</version>
+        </Luemic_PurchaseOrder>
+    </modules>
+    <global>
+        <models>
+            <luemic_purchaseorder>
+                <class>Luemic_PurchaseOrder_Model</class>
+            </luemic_purchaseorder>
+        </models>
+    </global>
+    <default>
+        <payment>
+            <luemic_purchaseorder>
+                <active>1</active>
+                <model>luemic_purchaseorder/method_purchaseorder</model>
+                <order_status>pending</order_status>
+                <title>Custom Purchase Order</title>
+                <allowspecific>0</allowspecific>
+                <group>offline</group>
+            </luemic_purchaseorder>
+        </payment>
+    </default>
+</config>

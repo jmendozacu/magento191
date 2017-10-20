@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package>
+    <name>Price_Countdown</name>
+    <version>1.4.0</version>
+    <stability>stable</stability>
+    <license>OSL v3.0</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>Countdown timer for Special product price to date. Timer displays according to the special price and to date set while adding products.</summary>
+    <description>Countdown timer for Special product price to date. Timer displays according to the special price and to date set while adding products.</description>
+    <notes>Countdown timer for Special product price to date. Timer displays according to the special price and to date set while adding products.</notes>
+    <authors><author><name>LEAD</name><user>apptha</user><email>info@apptha.com</email></author></authors>
+    <date>2014-12-30</date>
+    <time>15:12:48</time>
+    <contents><target name="magelocal"><dir name="Apptha"><dir name="Timer"><dir name="Block"><dir name="Product"><file name="List.php" hash="e0a98fd3c4cbedfb89036d801a03dbbb"/><file name="View.php" hash="cc6c07bb85ce7b350b6148b61dd00116"/></dir></dir><dir name="Helper"><file name="Data.php" hash="660c7e8b9e1d6ca566f3879cc201b520"/></dir><dir name="Model"><dir name="System"><dir name="Config"><dir name="Source"><file name="Showin.php" hash="83ad0ebf1167ce3067434be4d6811e35"/></dir></dir></dir></dir><dir name="etc"><file name="adminhtml.xml" hash="24dddb8493454306c33741bc566e9be9"/><file name="config.xml" hash="ac297e99a100e6496c4420f90b3fd135"/><file name="system.xml" hash="2cd1e4496c0416f809389631bbeed2c6"/></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Apptha_Timer.xml" hash="6bfae81454a51f0f63f8f88c16af9f00"/></dir></target><target name="magedesign"><dir name="adminhtml"><dir name="default"><dir name="default"><dir name="layout"><file name="timer.xml" hash="767876c536b76550cfc14801542d8e19"/></dir></dir></dir></dir><dir name="frontend"><dir name="base"><dir name="default"><dir name="layout"><file name="timer.xml" hash="1c386c2b37e39a42b00053ba49e02e72"/></dir><dir name="template"><dir name="timer"><dir name="product"><file name="list.phtml" hash="4c10e56e8ddc238e4c8db337823cd9d0"/><file name="view.phtml" hash="b13bf7d2748fc09b511b92da79fa78d2"/></dir></dir></dir></dir></dir><dir name="rwd"><dir name="default"><dir name="layout"><file name="timer.xml" hash="1c386c2b37e39a42b00053ba49e02e72"/></dir><dir name="template"><dir name="timer"><dir name="product"><file name="list.phtml" hash="76792439027f8929d3e769ac58f98b4c"/><file name="view.phtml" hash="8e7deb1f7c3efe61f501ae4d34c7984f"/></dir></dir></dir></dir></dir></dir></target><target name="mageskin"><dir name="frontend"><dir name="base"><dir name="default"><dir name="timer"><file name="timer.css" hash="26694a9b9c8bd186a0defe4159058bf8"/></dir></dir></dir></dir></target><target name="mage"><dir name="js"><file name="timer.js" hash="3b73d62168c95a362f26ca973c8480a1"/></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.2.0</min><max>6.0.0</max></php></required></dependencies>
+</package>

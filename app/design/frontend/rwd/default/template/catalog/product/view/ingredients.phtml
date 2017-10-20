@@ -1,0 +1,15 @@
+<?php
+/*
+ * Created on : Sep 28, 2017, 9:10:03 AM
+ * Author: Tran Trong Thang
+ * Email: trantrongthang1207@gmail.com
+ * Skype: trantrongthang1207
+ */
+$ingredients = $this->getProduct()->getIngredients();
+?>
+<div class="em-block-title"><h2><?php echo $this->__('Ingredients') ?></h2></div>
+<div class="box-collateral-content">
+    <div class="std">
+        <?php echo $this->helper('catalog/output')->productAttribute($this->getProduct(), $ingredients, 'ingredients') ?>
+    </div>
+</div>
