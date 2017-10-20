@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<config>
+  <modules>
+    <Fgc_SendNotifyRegister>
+      <version>0.1.0</version>
+    </Fgc_SendNotifyRegister>
+  </modules>
+  <global>
+    <helpers>
+      <sendnotifyregister>
+        <class>Fgc_SendNotifyRegister_Helper</class>
+      </sendnotifyregister>
+    </helpers>
+	<models>
+	  <sendnotifyregister>
+		<class>Fgc_SendNotifyRegister_Model</class>
+		<resourceModel>sendnotifyregister_mysql4</resourceModel>
+	  </sendnotifyregister>
+	</models>
+    <events>
+	  <customer_register_success> <!-- identifier of the event we want to catch -->
+        <observers>
+          <customer_register_success_handler> <!-- identifier of the event handler -->
+            <type>model</type> <!-- class method call type; valid are model, object and singleton -->
+            <class>sendnotifyregister/observer</class> <!-- observers class alias -->
+            <method>customerRegisterSuccess</method>  <!-- observer's method to be called -->
+            <args></args> <!-- additional arguments passed to observer -->
+          </customer_register_success_handler>
+        </observers>
+      </customer_register_success>
+    </events>
+  </global>
+</config> 

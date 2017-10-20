@@ -34,8 +34,11 @@
             $city = trim($this->getAddress()->getCity());
             $telephone = trim($this->getAddress()->getTelephone());
             $postcode = trim($this->getAddress()->getPostcode());
-            echo strlen($city);
-            if ($this->customerHasAddresses()):
+            $isshow = false;
+            if (strlen(trim($street)) != 0 && strlen(trim($city)) != 0 && strlen(trim($postcode)) != 0) {
+                $isshow = true;
+            }
+            if ($this->customerHasAddresses() && $isshow):
                 ?>
                 <li class="wide">
                     <label for="billing-address-select"><?php echo $this->__('Select a billing address from your address book or enter a new address.') ?></label>
@@ -44,7 +47,7 @@
                     </div>
                 </li>
             <?php endif; ?>
-            <li id="billing-new-address-form"<?php if ($this->customerHasAddresses()): ?> style="display:none;"<?php endif; ?> class="scaffold-form">
+            <li id="billing-new-address-form"<?php if ($this->customerHasAddresses() && $isshow): ?> style="display:none;"<?php endif; ?> class="scaffold-form">
                 <div class="fieldset">
                     <input type="hidden" name="billing[address_id]" value="<?php echo $this->getAddress()->getId() ?>" id="billing:address_id" />
                     <ul>
